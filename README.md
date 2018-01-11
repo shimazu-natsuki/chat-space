@@ -23,18 +23,13 @@ Things you may want to cover:
 
 # MEMBER
 
-### association
+## membersテーブル
+
+| Column | Type  |Options                       |
+|------  |-------|------------------------------|
+|user_id |integer|null: false, foreign_key: true|
+|group_id|integer|null: false, foreign_key: true|
+
+### Association
 - belongs_to :group
 - belongs_to :user
-
-### column
-- user_id
-- group_id
-
-### type
-- integer
-- integer
-
-### options
-- null: false, foreign_key: true
--null: false, foreign_key: true
