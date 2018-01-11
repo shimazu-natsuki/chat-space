@@ -21,5 +21,20 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
-j
+# MEMBER
+
+###association
+- belongs_to :group
+- belongs_to :user
+
+###column
+- user_id
+- group_id
+
+###type
+- integer
+- integer
+
+###options
+- null: false, foreign_key: true
+-null: false, foreign_key: true
