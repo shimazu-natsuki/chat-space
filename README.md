@@ -10,8 +10,8 @@ application up and running.
 |email|string|null:false|
 
 ### association
--has_many :users,throgh::memberts
--has_many :mambers
+-has_many :groups,throgh::members
+-has_many :members
 -has_many :messages
 
 
@@ -30,12 +30,10 @@ application up and running.
 ## groupテーブル
 |Column|Type|Options|
 |------|-------|--------|
-|user_id|integer|null: false,foreign_key: true|
-|group_id|integer|null: false,foreign_key: true|
 |name|string|null: false|
 
 ### association
--has_many :groups,through::members
+-has_many :usres,through::members
 -has_many :members
 -has_many :messages
 
