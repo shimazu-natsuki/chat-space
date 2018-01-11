@@ -23,18 +23,18 @@ Things you may want to cover:
 
 # MEMBER
 
-###association
+### association
 - belongs_to :group
 - belongs_to :user
 
-###column
+### column
 - user_id
 - group_id
 
-###type
+### type
 - integer
 - integer
 
-###options
+### options
 - null: false, foreign_key: true
 -null: false, foreign_key: true
