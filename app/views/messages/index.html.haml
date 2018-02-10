@@ -1,80 +1,39 @@
-.chat__side
+%p.message_box メッセージが送信されました。
+.sidebar_box
+  .name_box
+    .name_box__content
+      %p.name_box__content--name 名前
+      = link_to root_path do
+        %i.name_box__content--icon.fa.fa-cog
+      = link_to root_path do
+        %i.name_box__content--icon.fa.fa-pencil-square-o
+    .group_box_1
+      %p.group_box1__name グループ1
+      %p.group_box1__text まだメッセージはありません
+    .group_box_2
+      %p.group_box2__name グループ2
+      %p.group_box2__text まだメッセージはありません
 
-
-  .chat__side__user
-    .chat__side__user__name
-      %h1 current_user_name
-      %i.fa.fa-cog
-      %i.fa.fa-pencil-square-o
-
-
-  .chat__side__groups
-    .chat__side__groups__group
-      .chat__side__groups__group__name
-        %p group
-      .chat__side__groups__group__message
-        %p message
-
-    .chat__side__groups__group
-      .chat__side__groups__group__name
-      %p group
-      .chat__side__groups__group__message
-        %p message
-
-    .chat__side__groups__group
-      .chat__side__groups__group__name
-        %p group
-      .chat__side__groups__group__message
-        %p message
-
-
-
-.chat__groups
-  .chat__groups__left
-    .chat__groups__left__group
-      %p group-name
-    .chat__groups__left__member
-      %p member
-  .chat__groups__edit-btn
-    %p Edit
-
-
-.chat__messages
-  .chat__messages__body
-    .chat__messages__body__top
-      .chat__messages__body__top__name
-        %p kataoka
-      .chat__messages__body__top__date
-        %p 2018/01/07 12:00
-    .chat__messages__body__message
-      %p こんにちは。お疲れ様です。
-
-  .chat__messages__body
-    .chat__messages__body__top
-      .chat__messages__body__top__name
-        %p suzuki
-      .chat__messages__body__top__date
-        %p 2018/01/07 12:05
-    .chat__messages__body__message
-      %p こんにちは。
-
-  .chat__messages__body
-    .chat__messages__body__top
-      .chat__messages__body__top__name
-        %p satou
-      .chat__messages__body__top__date
-        %p 2018/01/07 12:05
-    .chat__messages__body__message
-      %p こんにちは。お元気ですか？
-
-
-
-.chat__footer
-  .chat__footer__form
-    %input{:class => "chat__footer__form__message", :type => "text", :placeholder => "type a message"}
-      .chat__footer__form__image
-        %label
-          %i.fa.fa-picture-o
-          %input{:type => "file", :class => "chat__footer__form__image__file"}
-    %input{:class => "chat__footer__form__send", :type => "submit", :value => "Send"}
-
+.main_screen_wrapper
+  .main_screen
+    .group_name_screen
+      .group_name_screen__content
+        %p.group_name_screen__content--name sampleグループ
+        %p.group_name_screen__content--edit_button edit
+        %p.group_name_screen__members Members: メンバー1、メンバー2
+    .chat_screen
+      .chat_screen__content
+        %p.chat_screen__content--name チャットメンバー1
+        %p.chat_screen__content--date 2018/01/01 12:34:56
+        %p.chat_screen__text チャット内容1
+      .chat_screen__content
+        %p.chat_screen__content--name チャットメンバー2
+        %p.chat_screen__content--date 2018/01/12 12:34:56
+        %p.chat_screen__text チャット内容2
+  .input_screen
+    %p.input_screen__text Type a message
+    %p.input_screen__send_button Send
+    %input#upload{type: "file"}
+    / = link_to root_path dos
+    %label{for: "upload"}
+      %i.input_screen__.fa.fa-picture-o
