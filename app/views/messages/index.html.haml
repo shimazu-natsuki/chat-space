@@ -1,25 +1,25 @@
-.chat-side
-  .chat-side__user
-    .chat-side__user__name
-      %p current_user.name
-    .chat-side__user__edit-user
-      = fa_icon "cog"
-    .chat-side__user__new-group
-      = fa_icon "pencil-square-o"
+/ .chat-side
+/   .chat-side__user
+/     .chat-side__user__name
+/       %p current_user.name
+/     .chat-side__user__edit-user
+/       = fa_icon "cog"
+/     .chat-side__user__new-group
+/       = fa_icon "pencil-square-o"
 
-  .chat-side__groups
-    %ul.chat-side__groups__group
-      %li.chat-side__groups__group__name
-        %p group
-      %li.chat-side__groups__group__message
-        %p message
+/   .chat-side__groups
+/     %ul.chat-side__groups__group
+/       %li.chat-side__groups__group__name
+/         %p group
+/       %li.chat-side__groups__group__message
+/         %p message
 
-    %ul.chat-side__groups__group
-      %li.chat-side__groups__group__name
-        %p group
-      %li.chat-side__groups__group__message
-        %p message
-
+/     %ul.chat-side__groups__group
+/       %li.chat-side__groups__group__name
+/         %p group
+/       %li.chat-side__groups__group__message
+/         %p message
+= render partial: "shared/side_bar"
 .chat-main
   .chat-main__header
     .chat-main__header__groups
@@ -56,4 +56,6 @@
       .chat-main__footer__form__image
         = fa_icon "picture-o"
     .chat-main__footer__form__send
+
       = "Send"
+/= render partial: shared/side_bar
