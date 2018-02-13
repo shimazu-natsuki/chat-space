@@ -5,9 +5,9 @@
 @import "mixins/vendor_prefix";
 @import "modules/side_bar";
 @import "modules/chat";
-@import "messages/messages";
 @import "mixins/clearfix";
+@import 'modules/flash';
 //@import 'variable';
 @import 'user';
-@import 'modules/flash';
 @import 'groups';
+@import 'messages';
