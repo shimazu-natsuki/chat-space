@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+  before_action :user_params, only: :update
 
   def index
   end
@@ -18,7 +19,7 @@ class UsersController < ApplicationController
   private
 
   def user_params
-    params.require(:name).permit(:name.:email)
+    params.require(:user).permit(:name,:email)
   end
 
 end

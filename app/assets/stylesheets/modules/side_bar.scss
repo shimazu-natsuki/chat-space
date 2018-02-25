@@ -2,6 +2,7 @@
   box-sizing: border-box;
   color: $white;
   width: 300px;
+  float:left;
   .header {
     background-color: $side_blue_dark;
     height: 100px;
@@ -33,9 +34,11 @@
       box-sizing: border-box;
       padding: 20px 0 40px;
       &__name {
+        color: $white;
         font-size: $side_group_name;
       }
       &__message {
+        color: $white;
         font-size: $side_group_message;
         margin-top: 5px;
       }

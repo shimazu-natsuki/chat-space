@@ -1,0 +1,11 @@
+.chat_screen
+  - messages.each do |message|
+    .chat_screen__content{ "data-id": message.id }
+      %p.chat_screen__content--name
+        = message.user.name
+      %p.chat_screen__content--date
+        = message.create_time
+      %p.chat_screen__text
+        = message.content
+      %p.chat_screen__image
+        = image_tag message.image if message.image.present?
